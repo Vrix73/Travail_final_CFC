@@ -1,0 +1,78 @@
+/**
+ * TITRE : VoyageMémo
+ * Auteur : Guilain Fernandez
+ * Description : le css qui s'appliquera a toute les pages
+ * Date : 25/04/2024
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  background-color: #3cdbd1;
+  height: 8vh;
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+}
+.card{
+  border: none;
+  background-color: aliceblue;
+}
+.card img{
+  width: 100;
+  height: 75;
+}
+
+.pictureList{
+  height: 15vh;
+}
+
+.modifyStage{
+  height: 90%;
+}
+
+.dropdown-menu>li {
+  margin: 5px;
+}
+
+.password-field {
+    position: relative;
+}
+
+/*css pour icone voir le mots de passe*/
+.password-field .password-icon {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    color: black;
+    transition: all 0.2s;
+}
+
+/*css pour icone randome mots de passe*/
+.password-field .random-icon {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 20px;
+    color: black;
+    transition: all 0.2s;
+}
+
+.password-field .password-icon .bi-eye-slash {
+    display: none;
+}
